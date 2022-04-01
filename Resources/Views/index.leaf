@@ -1,0 +1,2 @@
+<h1>Welcome to the Weather API! 🌤</h1><br/>
+You can access the weather data from <a href="/weather?lat=40.851799&lon=14.268120">/weather?lat=40.851799&lon=14.268120</a>

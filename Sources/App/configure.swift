@@ -1,10 +1,14 @@
 import Vapor
+import Leaf
 
-// configures your application
+/** Configures your Vapor application */
 public func configure(_ app: Application) throws {
-    // uncomment to serve files from /Public folder
+    /// Uncomment to serve files from /Public folder
     // app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
 
-    // register routes
+    /// Enable Leaf support. Used to show the index page
+    app.views.use(.leaf)
+    
+    /// Register routes
     try routes(app)
 }
